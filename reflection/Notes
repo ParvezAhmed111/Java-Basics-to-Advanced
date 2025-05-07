@@ -1,0 +1,39 @@
+1. What is Reflection?
+
+This is used to examine the Classes, Methods, Fields, Interfaces at runtime and also possible to change the behavior of the Class too.
+
+For example:
+    - What all methods present in the class.
+    - What all fields present in the class.
+    - What is the return type of the method.
+    - What is the Modifier of the Class
+    - What all interfaces class has implemented
+    - Change the value of the public and private fields of the Class etc.........
+
+------------------------------------------------------------------------------------------------------------------------
+2. How to do Reflection of Classes?
+
+To reflect the class, we first need to get an Object of Class
+(So, lets first understand, Class then we will come back to how to reflect the class.)
+
+    a. What is this class Class?
+
+        - Instance of the class Class represents classes during runtime.
+        - JVM creates one Class object for each and every class which is loaded during run time.
+        - This Class object, has meta data information about the particular class like its method, fields, constructor etc.
+
+    b. How to get the particular class Class object?
+
+        There are 3 ways:
+            1. using ".forName()" method
+                class Bird { }
+                Class birdClass= Class.forName("Bird");
+
+            2. using ".cass" method
+                class Bird { }
+                Class birdClass= Bird.class;
+
+            3. using "getClass()" method
+                class Bird { }
+                Bird birdObj= new Bird();
+                Class birdClass= birdObj.getClass();
