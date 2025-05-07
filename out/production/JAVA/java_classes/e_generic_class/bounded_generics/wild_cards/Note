@@ -1,5 +1,0 @@
-Wildcards:
-
-Upper bounded wildcard : <? extends UpperBoundClassName> i.e. class Name and below
-Lower bounded wildcard : <? super LowerBoundClassName> i.e. class Name and above A
-Unbounded wildcard     : <?> only you can read
