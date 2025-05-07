@@ -1,0 +1,17 @@
+Abstract Class (0 to 100% Abstraction):
+
+Show only important features to users and hide its internal implementation.
+2 ways to achieve abstraction:
+    1. Through interface
+    2. Using abstract keyword
+
+Class is declared as abstracted through keyword "abstract".
+It can have both abstract(method without body) and non abstract methods.
+We can not create an instance of this class.
+We parent has some features which all child classes have in common, then this can be used.
+Constructors can be created inside them. And with super keyword from child classes we can access them.
+
+Example:
+
+Car ---------------> LuxuryCar -------> Audi
+(abstract class) (abstract class) (concrete class)

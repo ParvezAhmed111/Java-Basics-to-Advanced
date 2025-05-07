@@ -1,0 +1,11 @@
+Final Class:
+- Final class cannot be inherited
+
+
+public final class TestClass {
+
+}
+
+public class MyOtherClass extends TestClass {  // compilation error
+
+}

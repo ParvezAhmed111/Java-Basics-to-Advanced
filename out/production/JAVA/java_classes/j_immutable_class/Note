@@ -1,0 +1,10 @@
+IMMUTABLE CLASS:
+
+- We can not change the value of an object once it is created.
+- Declare class as 'final' so that it can not be extended.
+- All class members should be private. So that direct access can be avoided.
+- And class members are initialized only once using constructor.
+- There should not be any setter methods, which is generally use to change the value.
+- Just getter methods. And returns Copy of the member variable.
+
+Example: String, Wrapper Classes etc.

@@ -1,0 +1,9 @@
+Concrete Class
+
+These are those class that we can create and instance using NEW keyword
+All methods in this class have implementations
+It can also be your child class from interface or extended abstract class
+A class access modifier cab be "public" or "package private" (no explicit modifier defined)
+
+Example:
+Person and Rectangle both are concrete classes
