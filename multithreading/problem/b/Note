@@ -1,0 +1,12 @@
+Th1: Thread1
+Th2: Thread2
+R1 : Resource1
+
+
+      Main          |   Th1           | Th2
+----------------------------------------------------------
+t1:  Start          |                 |
+t2:  Th1 & Th2      | created         | created
+t3: start Th1 & Th2 | acquire lock R1 | sleep(1000)
+t4:                 |                 | try to acquire lock R1, T2 is waiting for lock to release
+t5: suspend Th1     | suspended       | as lock is not release, so T2 will be on deadlock state

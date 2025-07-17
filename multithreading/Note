@@ -1,0 +1,24 @@
+Tread can be created in 2 ways:
+1. implementing "Runnable" interface  -> (recommended in companies)
+2. extending "Thread" class
+
+Why we have 2 ways to create a thread?
+    Because a class can implement more than 1 interface
+    and a class can extend only 1 class
+
+
+Thread life cycle states:
+
+New     :- The thread is created but has not yet started. It is not yet eligible for execution.
+Runnable:- The thread is ready to run and is waiting for its turn to be executed by the thread scheduler. This state can also be entered after a thread is yielded, or after it returns from a waiting, sleeping, or blocked state.
+Running :- The thread is currently executing.
+Blocked :- The thread is waiting for a lock to enter a synchronized block or method.
+Waiting :- The thread is waiting indefinitely for another thread to perform a specific action. This state is entered when calling wait() without a timeout or join() without a timeout.
+Timed Waiting :- The thread is waiting for a specific amount of time. This state is entered when calling sleep(), join() with a timeout, or wait() with a timeout.
+Terminated :- The thread has completed its execution or has been terminated due to an exception. Once a thread is terminated, it cannot be restarted.
+
+
+
+MONITOR LOCK:
+It helps to make sure that only 1 thread goes inside the particular section of code
+(a synchronized block or method)
